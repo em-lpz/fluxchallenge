@@ -17,12 +17,12 @@ install gulp-cli
 npm install --global gulp-cli
 ```
 
-install gulp gulp-sass browser-sync
+In project root folder install gulp gulp-sass browser-sync
 ```
 npm install gulp gulp-sass browser-sync
 ```
 
-run gulp watch
+In project folder run gulp watch
 ```
 gulp watch
 ```
