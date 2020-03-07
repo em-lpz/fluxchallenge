@@ -1,6 +1,7 @@
 # fluxchallenge
 
-#Instalación para compilar sass (opcional)
+Instalación para compilar sass (opcional)
+
 
 install node
 ```
