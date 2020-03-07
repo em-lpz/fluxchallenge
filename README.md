@@ -1,28 +1,42 @@
 # fluxchallenge
 
+#Instalación para compilar sass (opcional)
+
 install node
+```
+https://nodejs.org/es/
+```
+
 install npm
+```
+npm install
+```
+
 install gulp-cli
+```
+npm install --global gulp-cli
+```
+
 install gulp gulp-sass browser-sync
+```
+npm install gulp gulp-sass browser-sync
+```
+
 run gulp watch
+```
+gulp watch
+```
 
-HORAS
-8 a 2
-10 a 23.30
-12.30 a 2.40
-22.30 a 23.30
-00 a 1.20
+# Horas trabajadas
+15hs
 
-1.40 a 3
-20.00 a 21
+#Proceso
 
-1. Medidas en Adobe XD
-2. Layout general
-3. Booststrap variables
-4. Sidebar links
-5. Sidebar buttons
-6. Navbar Logo
-7. Navbar dropdown
-8. Navbar user
-9. Timeline
-10. Correcciones mobile
+1. Pasaje de archivos JPG a Adobe XD para obtener medidas
+2. Maquetación de layout general (header, sidebar, content)
+3. Customización de variables de bootstrap
+4. Estilización de links de sidebar
+5. Estilización de botones de sidebar
+6. Estilización de elementos del navbar (logo, dropdown, user)
+7. Markup y estilos para timeline
+8. Correcciones mobile usando bootstrap utilities
