@@ -30,7 +30,7 @@ gulp watch
 # Horas trabajadas
 15hs
 
-#Proceso
+# Proceso
 
 1. Pasaje de archivos JPG a Adobe XD para obtener medidas
 2. Maquetación de layout general (header, sidebar, content)
