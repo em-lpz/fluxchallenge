@@ -1,0 +1,17 @@
+.RP-user{
+    padding: 0 1rem;
+    font-weight: 600;
+    vertical-align: middle;
+    &__name{
+        margin-right: 0.025rem;
+    }
+    &__lastname{
+        margin-right: 0.5rem;
+    }
+    &__avatar{
+        background-color: $light-gray;
+        padding: 0.5rem;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+    }
+}

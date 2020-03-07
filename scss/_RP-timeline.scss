@@ -1,0 +1,65 @@
+.RP-timeline{
+    list-style: none;
+    padding-left: 3.375rem;
+    &__item{
+        margin-bottom: 1rem;
+        background-color: $white;
+        border: 1px solid $border-color;
+        border-radius: 0.25rem;
+        position: relative;
+        &:only-child, &:last-child{
+            .RP-timeline__item-line{
+                display: none;
+            }
+        }
+        &.RP-timeline__item--alert{
+            .RP-timeline__item-body{
+                padding-top: 0.625rem;
+                padding-bottom: 0.625rem;
+            }
+        }
+        &.RP-timeline__item--waiting{
+            background-color: $border-color;
+            .RP-timeline__item-body{
+                font-size: 1.125rem;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+        }
+    }
+    &__item-header{
+        padding: 0.625rem 1.25rem;
+        border-bottom: 1px solid $border-color;
+    }
+    &__item-body{
+        padding: 1.25rem;
+        color: #76797B;
+    }
+    &__item-icon{
+        position: absolute;
+        top: 0.75rem;
+        left: -2.5rem;
+        width: 26px;
+        height: 26px;
+        border-radius: 1rem;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $white;
+        font-size: 0.75rem;
+    }
+    &__item-line{
+        position: absolute;
+        top: 0.75rem;
+        left: -1.75rem;
+        height: calc(100% + 2rem);
+        width: 2px;
+        border-right: 1px dashed gray;
+    }
+    &__item-amount{
+        font-weight: 800;
+        font-size: 1.125rem;
+        color: $primary;
+    }
+}

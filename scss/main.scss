@@ -1,0 +1,101 @@
+@import "scss/RP-variables";
+@import "bootstrap/scss/bootstrap";
+
+@import "scss/RP-timeline";
+@import "scss/RP-user";
+@import "scss/RP-header-dropdown";
+
+.btn{
+    padding: 0.5rem 0.75rem;
+    line-height: 1rem;
+}
+
+.RP-grid{
+    display: grid;
+    grid-template-columns: auto;
+    @include media-breakpoint-up(sm) {
+        grid-template-columns: 200px 1fr;
+    }
+}
+
+
+.RP-header{
+    justify-content: start;
+    .navbar-brand{
+        display: inline-block;
+        margin-left: 0.5rem;
+    }
+}
+
+.RP-sidebar{
+    background-color: $white;
+    min-width: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: sticky;
+    top: $navbarHeight;
+    z-index: 2;
+    .nav{
+        display: flex;
+        flex-direction: row;
+        @include media-breakpoint-up(sm) {
+            flex-direction: column;     
+        }
+    }
+    .nav-item{
+        background-color: $light-gray;
+        border-bottom: 2px solid $light-gray;
+        flex-basis: 50%;
+        text-align: center;
+        @include media-breakpoint-up(sm) {
+            text-align: left;     
+            flex-basis: initial;
+        }
+    }
+    .nav-link{
+        color: #404040;
+        font-size: 1.063rem; //17 px
+        background-color: $white;
+        padding: 1rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &.active{
+            color: $primary;
+            border-bottom: 2px solid $primary;
+            background-color: $white;
+            font-weight: 800;
+        }            
+        @include media-breakpoint-up(sm) {
+            padding: 1.25rem 1.5rem;
+            display: block;
+            &.active{
+                background-color: $body-bg;;
+                border-bottom: 2px solid transparent;  
+            }
+        }
+    }
+
+    .btn{
+        @extend .nav-link;
+        border-bottom: 0;
+        border-top: 2px solid $light-gray;
+        text-align: left;
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+        &.emphasized{
+            font-weight: 600;
+        }
+        &:hover{
+            z-index: initial;
+        }
+    }
+}
+
+.RP-content{
+    background-color: $body-bg;
+    height: calc(100vh - #{$navbarHeight});
+}
