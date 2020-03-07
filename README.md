@@ -23,7 +23,7 @@ In project root folder install gulp gulp-sass browser-sync
 npm install gulp gulp-sass browser-sync
 ```
 
-In project folder run gulp watch
+In project root folder run gulp watch
 ```
 gulp watch
 ```
